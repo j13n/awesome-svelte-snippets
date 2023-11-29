@@ -6,7 +6,7 @@ Uses type inference when possible. No unnecessary type imports.
 
 Supports Svelte 5 RUNES (R00nz / signals).
 
-[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=JakobKruse.svelte-kit-snippets)
+[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=j13n.awesome-svelte-snippets)
 
 ## Snippets
 
