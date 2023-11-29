@@ -23,7 +23,7 @@
     "awesome"
   ],
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "^1.0.1"
   },
   "categories": [
     "Snippets"
