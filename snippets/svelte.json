@@ -1,16 +1,6 @@
 {
-  "Svelte: Component (TypeScript)": {
-    "prefix": "svcomp",
-    "body": ["<script lang=\"ts\">", "   $1", "</script>", "", "$0"],
-    "description": "Svelte Component (TypeScript)"
-  },
-  "Svelte: Component (JavaScript)": {
-    "prefix": "svcompjs",
-    "body": ["<script>", "   $1", "</script>", "", "$0"],
-    "description": "Svelte Component (JavaScript)"
-  },
-  "Svelte: Event Dispatcher (TypeScript)": {
-    "prefix": "svdisp",
+  "Svelte: Event Dispatcher": {
+    "prefix": "svdispatch",
     "body": [
       "import { createEventDispatcher } from 'svelte';",
       "",
@@ -19,28 +9,18 @@
     ],
     "description": "Svelte Event Dispatcher"
   },
-  "Svelte: Event Dispatcher (JavaScript)": {
-    "prefix": "svdispjs",
-    "body": [
-      "import { createEventDispatcher } from 'svelte';",
-      "",
-      "const dispatch = createEventDispatcher()",
-      "$0"
-    ],
-    "description": "Svelte Event Dispatcher (JavaScript)"
-  },
   "Svelte: Head Tag": {
     "prefix": "svhead",
     "body": ["<svelte:head>", "   $1", "</svelte:head>", "$0"],
     "description": "Svelte Head Tag"
   },
   "Svelte: For Each": {
-    "prefix": "svfe",
+    "prefix": "svforeach",
     "body": ["{#each $1 as $2 ($3)}", "   $0", "{/each}", "$0"],
     "description": "Svelte For Each"
   },
   "Svelte: For Each else": {
-    "prefix": "svfee",
+    "prefix": "svforeachelse",
     "body": [
       "{#each $1 as $2 ($3)}",
       "   $4",
@@ -57,12 +37,12 @@
     "description": "Svelte If"
   },
   "Svelte: If Else": {
-    "prefix": "svife",
+    "prefix": "svifelse",
     "body": ["{#if $1}", "   $2", "{:else}", "   $3", "{/if}", "$0"],
     "description": "Svelte If Else"
   },
   "Svelte: If Else If": {
-    "prefix": "svifei",
+    "prefix": "svifelseif",
     "body": ["{#if $1}", "   $2", "{:else if $3}", "   $4", "{/if}", "$0"],
     "description": "Svelte If Else If"
   },

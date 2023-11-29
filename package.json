@@ -1,20 +1,20 @@
 {
-  "name": "svelte-kit-snippets",
-  "displayName": "Svelte Snippets",
-  "description": "Snippets for Svelte and Svelte-Kit",
-  "version": "1.1.0",
-  "publisher": "JakobKruse",
+  "name": "svelte-awesome-snippets",
+  "displayName": "Svelte Awesome Snippets",
+  "description": "Awesome Snippets for Svelte and Svelte-Kit",
+  "version": "1.0.0",
+  "publisher": "",
   "author": {
-    "name": "Jakob Kruse",
-    "email": "contact@jakob-kruse.de"
+    "name": "Janusz Oppermann",
+    "email": "hi@j13n.com"
   },
   "bugs": {
-    "url": "https://github.com/jakob-kruse/svelte-snippets.git/issues",
-    "email": "contact@jakob-kruse.de"
+    "url": "https://github.com/j13n/svelte-awesome-snippets/issues",
+    "email": "hi@j13n.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakob-kruse/svelte-snippets.git"
+    "url": "git@github.com:j13n/svelte-awesome-snippets.git"
   },
   "engines": {
     "vscode": "^1.0.0"

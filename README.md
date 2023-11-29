@@ -1,11 +1,12 @@
 # Svelte Snippets
 
-Snippets for Svelte and Svelte-Kit (using TypeScript)
+Snippets for Svelte and Svelte-Kit 5 (using TypeScript)
+
+Using type inference when possible. No unneccessary imports
 
 [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=JakobKruse.svelte-kit-snippets)
 
 ## Snippets
-
 
 ### SVELTE KIT
 
@@ -14,31 +15,26 @@ Snippets for Svelte and Svelte-Kit (using TypeScript)
 
 ```ts
 <script lang="ts">
-   import type { PageData } from './\$types';
+  import type {PageData} from './\$types'; export let page: PageData; $1
+</script>;
 
-   export let page: PageData;
-   $1
-</script>
-
-$0
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>pagejs -  Page (JavaScript)</summary>
 
 ```ts
-<script>
-   /** @type {import('./\$types').PageData} */
-   export let page;
-   $1
-</script>
+<script>/** @type {import("./$types").PageData} */ export let page; $1</script>;
 
-$0
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>pl -  Page Load (TypeScript)</summary>
@@ -53,8 +49,9 @@ export const load: PageLoad = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>pljs -  Page Load (JavaScript)</summary>
@@ -68,8 +65,9 @@ export const load = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>psl -  Page Server Load (TypeScript)</summary>
@@ -84,8 +82,9 @@ export const load: PageServerLoad = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>psljs -  Page Server Load (JavaScript)</summary>
@@ -99,8 +98,9 @@ export const load = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>ll -  Layout Load (TypeScript)</summary>
@@ -115,8 +115,9 @@ export const load: LayoutLoad = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>ll -  Layout Load (JavaScript)</summary>
@@ -130,8 +131,9 @@ export const load = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>lsl -  Layout Server Load (TypeScript)</summary>
@@ -146,8 +148,9 @@ export const load: LayoutServerLoad = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>lsljs -  Layout Server Load (JavaScript)</summary>
@@ -161,8 +164,9 @@ export const load = async (${1:event}) => {
    };
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>a -  Page Actions (TypeScript)</summary>
@@ -176,8 +180,9 @@ export const actions: Actions = {
    }
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>ajs -  Page Actions (JavaScript)</summary>
@@ -190,22 +195,24 @@ export const actions = {
    }
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>hh -  Hooks: Handle (TypeScript)</summary>
 
 ```ts
-import type { Handle } from './\$types';
+import type { Handle } from "./$types";
 
 export const handle: Handle = async ({ request, resolve }) => {
-   $1
-   return resolve(request);
+  $1;
+  return resolve(request);
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>hhjs -  Hooks: Handle (JavaScript)</summary>
@@ -213,26 +220,28 @@ export const handle: Handle = async ({ request, resolve }) => {
 ```ts
 /** @type {import('./\$types').Handle} */
 export const handle = async ({ event, resolve }) => {
-   $1
-   return resolve(event);
+  $1;
+  return resolve(event);
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>hf -  Hooks: HandleFetch (Typescript)</summary>
 
 ```ts
-import type { HandleFetch } from './\$types';
+import type { HandleFetch } from "./$types";
 
 export const handle: HandleFetch = async ({ request, fetch }) => {
-   $1
-   return resolve(request);
+  $1;
+  return resolve(request);
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>hfjs -  Hooks: HandleFetch (JavaScript)</summary>
@@ -240,24 +249,26 @@ export const handle: HandleFetch = async ({ request, fetch }) => {
 ```ts
 /** @type {import('./\$types').HandleFetch} */
 export const handle = async ({ request, fetch }) => {
-   $1
+  $1;
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>he -  Hooks: Handle Error (TypeScript)</summary>
 
 ```ts
-import type { HandleError } from './\$types';
+import type { HandleError } from "./$types";
 
 export const handle: HandleError = async ({ error, event }) => {
-   $2
+  $2;
 };
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sk</b>hejs -  Hooks: Handle Error (JavaScript)</summary>
@@ -265,12 +276,13 @@ export const handle: HandleError = async ({ error, event }) => {
 ```ts
 /** @type {import('./\$types').HandleError} */
 export const handle = async ({ error, event }) => {
-   $1
+  $1;
 };
 ```
+
 </details>
     
-    
+
 
 ### SVELTE
 
@@ -278,63 +290,62 @@ export const handle = async ({ error, event }) => {
 <summary markdown="span"><b>sv</b>comp -  Component (TypeScript)</summary>
 
 ```ts
-<script lang="ts">
-   $1
-</script>
+<script lang="ts">$1</script>;
 
-$0
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>compjs -  Component (JavaScript)</summary>
 
 ```ts
-<script>
-   $1
-</script>
+<script>$1</script>;
 
-$0
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>disp -  Event Dispatcher</summary>
 
 ```ts
-import { createEventDispatcher } from 'svelte';
+import { createEventDispatcher } from "svelte";
 
-const dispatch = createEventDispatcher<{ $1: $2}>()
-$0
+const dispatch = createEventDispatcher<{ $1: $2 }>();
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>dispjs -  Event Dispatcher (JavaScript)</summary>
 
 ```ts
-import { createEventDispatcher } from 'svelte';
+import { createEventDispatcher } from "svelte";
 
-const dispatch = createEventDispatcher()
-$0
+const dispatch = createEventDispatcher();
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>head -  Head Tag</summary>
 
 ```ts
-<svelte:head>
-   $1
-</svelte:head>
-$0
+<svelte:head>$1</svelte:head>;
+$0;
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>fe -  For Each</summary>
@@ -345,8 +356,9 @@ $0
 {/each}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>fee -  For Each else</summary>
@@ -359,8 +371,9 @@ $0
 {/each}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>if -  If</summary>
@@ -371,8 +384,9 @@ $0
 {/if}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>ife -  If Else</summary>
@@ -385,8 +399,9 @@ $0
 {/if}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>ifei -  If Else If</summary>
@@ -399,8 +414,9 @@ $0
 {/if}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>await -  Await</summary>
@@ -413,8 +429,9 @@ $0
 {/await}
 $0
 ```
+
 </details>
-    
+
 
 <details>
 <summary markdown="span"><b>sv</b>key -  Key</summary>
@@ -425,9 +442,10 @@ $0
 {/key}
 $0
 ```
+
 </details>
     
-    
+
 
 ## Note
 
