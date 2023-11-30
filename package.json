@@ -2,7 +2,7 @@
   "name": "awesome-svelte-snippets",
   "displayName": "Awesome Svelte Snippets",
   "description": "Awesome Snippets for Svelte and Svelte-Kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "j13n",
   "author": {
     "name": "Janusz Oppermann",
@@ -22,9 +22,6 @@
     "snippets",
     "awesome"
   ],
-  "engines": {
-    "vscode": "^1.0.0"
-  },
   "categories": [
     "Snippets"
   ],

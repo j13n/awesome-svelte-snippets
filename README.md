@@ -18,10 +18,10 @@ Supports Svelte 5 RUNES (R00nz / signals).
 
 ```ts
 <script lang="ts">
-   $0
+   $1
 </script>
 
-$1
+$2
 ```
 </details>
     
@@ -32,7 +32,7 @@ $1
 ```ts
 <script lang="ts">
    export let data;
-   $0
+   $1
 </script>
 ```
 </details>
@@ -45,7 +45,7 @@ $1
 export const load = async (${1:event}) => {
    $2
    return {
-     $0
+     $3
    };
 };
 ```
@@ -57,8 +57,8 @@ export const load = async (${1:event}) => {
 
 ```ts
 export const actions = {
-   ${0:default}: async ({ $1 }) => {
-     $2
+   ${1:default}: async (${2:event}) => {
+     $3
    }
 }
 ```
@@ -70,7 +70,7 @@ export const actions = {
 
 ```ts
 export const handle = async ({ request, resolve }) => {
-   $0
+   $1
    return resolve(request);
 };
 ```
