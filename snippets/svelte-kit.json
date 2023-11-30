@@ -1,21 +1,14 @@
 {
   "SvelteKit: Page": {
     "prefix": "skpage",
-    "body": [
-      "<script lang=\"ts\">",
-      "   export let page;",
-      "   $1",
-      "</script>",
-      "",
-      "$0"
-    ],
+    "body": ["<script lang=\"ts\">", "   $0", "</script>", "", "$1"],
     "description": "SvelteKit Page"
   },
   "SvelteKit: Script": {
     "prefix": "skscript",
     "body": [
       "<script lang=\"ts\">",
-      "   export let page;",
+      "   export let data;",
       "   $0",
       "</script>"
     ],
@@ -37,10 +30,10 @@
     "prefix": "skactions",
     "body": [
       "export const actions = {",
-      "   async ${1:default}({ $2 }) {",
-      "     $3",
+      "   ${0:default}: async ({ $1 }) => {",
+      "     $2",
       "   }",
-      "};"
+      "}"
     ],
     "description": "SvelteKit Actions"
   },
@@ -48,7 +41,7 @@
     "prefix": "skhooks",
     "body": [
       "export const handle = async ({ request, resolve }) => {",
-      "   $1",
+      "   $0",
       "   return resolve(request);",
       "};"
     ],
