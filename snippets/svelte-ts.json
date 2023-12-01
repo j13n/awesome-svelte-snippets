@@ -1,0 +1,25 @@
+{
+  "Svelte: State Rune": {
+    "prefix": "svstate",
+    "body": ["let ${1:varName} = $$state(${2:initialValue});"],
+    "description": "Create a rune state variable"
+  },
+  "Svelte: Derived Rune": {
+    "prefix": "svderived",
+    "body": ["let ${1:varName} = $$derived(${2:expression});"],
+    "description": "Create a rune derived variable"
+  },
+  "Svelte Effect Rune": {
+    "prefix": "sveffect",
+    "body": [
+      "$$effect(() => {",
+      "\tconsole.log(${1:varName});",
+      "",
+      "\treturn () => {",
+      "\t\tconsole.log(\"cleanup\");",
+      "\t}",
+      "});"
+    ],
+    "description": "Create a rune effect, including cleanup. Even if you don't need it, it's a good to atleast remind yourself that you should think about it."
+  }
+}

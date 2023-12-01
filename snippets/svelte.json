@@ -11,21 +11,21 @@
   },
   "Svelte: Head Tag": {
     "prefix": "svhead",
-    "body": ["<svelte:head>", "   $1", "</svelte:head>", "$0"],
+    "body": ["<svelte:head>", "\t$1", "</svelte:head>", "$0"],
     "description": "Svelte Head Tag"
   },
   "Svelte: For Each": {
     "prefix": "svforeach",
-    "body": ["{#each $1 as $2 ($3)}", "   $0", "{/each}", "$0"],
+    "body": ["{#each $1 as $2 ($3)}", "\t$0", "{/each}", "$0"],
     "description": "Svelte For Each"
   },
   "Svelte: For Each else": {
     "prefix": "svforeachelse",
     "body": [
       "{#each $1 as $2 ($3)}",
-      "   $4",
+      "\t$4",
       "{:else}",
-      "   $5",
+      "\t$5",
       "{/each}",
       "$0"
     ],
@@ -33,27 +33,27 @@
   },
   "Svelte: If": {
     "prefix": "svif",
-    "body": ["{#if $1}", "   $2", "{/if}", "$0"],
+    "body": ["{#if $1}", "\t$2", "{/if}", "$0"],
     "description": "Svelte If"
   },
   "Svelte: If Else": {
     "prefix": "svifelse",
-    "body": ["{#if $1}", "   $2", "{:else}", "   $3", "{/if}", "$0"],
+    "body": ["{#if $1}", "\t$2", "{:else}", "\t$3", "{/if}", "$0"],
     "description": "Svelte If Else"
   },
   "Svelte: If Else If": {
     "prefix": "svifelseif",
-    "body": ["{#if $1}", "   $2", "{:else if $3}", "   $4", "{/if}", "$0"],
+    "body": ["{#if $1}", "\t$2", "{:else if $3}", "\t$4", "{/if}", "$0"],
     "description": "Svelte If Else If"
   },
   "Svelte: Await": {
     "prefix": "svawait",
-    "body": ["{#await $1}", "   $2", "{:then $3}", "   $4", "{/await}", "$0"],
+    "body": ["{#await $1}", "\t$2", "{:then $3}", "\t$4", "{/await}", "$0"],
     "description": "Svelte Await"
   },
   "Svelte: Key": {
     "prefix": "svkey",
-    "body": ["{#key $1}", "   $2", "{/key}", "$0"],
+    "body": ["{#key $1}", "\t$2", "{/key}", "$0"],
     "description": "Svelte Key"
   }
 }

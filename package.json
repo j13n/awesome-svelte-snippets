@@ -1,8 +1,8 @@
 {
   "name": "awesome-svelte-snippets",
   "displayName": "Awesome Svelte Snippets",
-  "description": "Awesome Snippets for Svelte and Svelte-Kit",
-  "version": "1.0.4",
+  "description": "Awesome Snippets for Svelte and Svelte-Kit, including Svelte 5 support",
+  "version": "1.1.0",
   "publisher": "j13n",
   "author": {
     "name": "Janusz Oppermann",
@@ -31,6 +31,10 @@
       {
         "language": "svelte",
         "path": "./snippets/svelte.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/svelte-ts.json"
       },
       {
         "language": "svelte",

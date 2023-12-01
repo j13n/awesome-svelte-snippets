@@ -1,48 +1,43 @@
 {
   "SvelteKit: Page": {
-    "prefix": "skpage",
-    "body": ["<script lang=\"ts\">", "   $1", "</script>", "", "$2"],
+    "prefix": "svpage",
+    "body": ["<script lang=\"ts\">", "\t$1", "</script>", "", "$2"],
     "description": "SvelteKit Page"
   },
   "SvelteKit: Script": {
-    "prefix": "skscript",
-    "body": [
-      "<script lang=\"ts\">",
-      "   export let data;",
-      "   $1",
-      "</script>"
-    ],
+    "prefix": "svscript",
+    "body": ["<script lang=\"ts\">", "\texport let data;", "\t$1", "</script>"],
     "description": "SvelteKit Script"
   },
   "SvelteKit: Load": {
-    "prefix": "skload",
+    "prefix": "svload",
     "body": [
       "export const load = async (${1:event}) => {",
-      "   $2",
-      "   return {",
-      "     $3",
-      "   };",
+      "\t$2",
+      "\treturn {",
+      "\t\t$3",
+      "\t};",
       "};"
     ],
     "description": "SvelteKit Load"
   },
   "SvelteKit: Actions": {
-    "prefix": "skactions",
+    "prefix": "svactions",
     "body": [
       "export const actions = {",
-      "   ${1:default}: async (${2:event}) => {",
-      "     $3",
-      "   }",
+      "\t${1:default}: async (${2:event}) => {",
+      "\t\t$3",
+      "\t}",
       "}"
     ],
     "description": "SvelteKit Actions"
   },
   "SvelteKit: Hooks": {
-    "prefix": "skhooks",
+    "prefix": "svhooks",
     "body": [
       "export const handle = async ({ request, resolve }) => {",
-      "   $1",
-      "   return resolve(request);",
+      "\t$1",
+      "\treturn resolve(request);",
       "};"
     ],
     "description": "SvelteKit Hooks"

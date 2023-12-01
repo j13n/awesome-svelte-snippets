@@ -60,13 +60,27 @@ const readmeTemplate = (categories: SnippetCategory[]): string => {
   return `
 # Svelte Awesome Snippets for VSCode
 
-Awesome Snippets for Svelte and Svelte-Kit (using TypeScript).
+Awesome, easy to remember snippets for Svelte and Svelte-Kit (using TypeScript).
 
 Uses type inference when possible. No unnecessary type imports.
 
-Supports Svelte 5 RUNES (R00nz / signals).
+### Snippets structure:
 
-[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=j13n.awesome-svelte-snippets)
+* Svelte Kit for Svelte Kit specific typescript and routing files (the + files);
+* Svelte TS for Svelte files that belong between the \`<script lang="ts">\` tags in a .svelte file;
+* Svelte for Svelte templating snippets.
+
+### Naming convention:
+All snippets start with **sv**. I had a distinction between Svelte and Svelte Kit commands (**sv** or **sk**) but I decided against it as it adds mental overhead remembering the distinction.
+
+Added support for Svelte 5 API:
+
+- Runes
+- Snippets
+
+[Awesome Svelte Snippets on VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=j13n.awesome-svelte-snippets).
+
+[For bugs or feedback, please open an issue on Github](https://github.com/j13n/awesome-svelte-snippets/issues).
 
 ## Snippets
 
