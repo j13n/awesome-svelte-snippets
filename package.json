@@ -46,6 +46,9 @@
       }
     ]
   },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
   "scripts": {
     "build": "tsx scripts/generate-readme.ts",
     "prepare": "husky install"
