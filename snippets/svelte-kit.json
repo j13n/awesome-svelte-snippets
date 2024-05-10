@@ -6,8 +6,17 @@
   },
   "SvelteKit: Script": {
     "prefix": "svscript",
-    "body": ["<script lang=\"ts\">", "\texport let data;", "\t$1", "</script>"],
+    "body": [
+      "<script lang=\"ts\">",
+      "\t${TM_SELECTED_TEXT:${1:export let data;}",
+      "</script>"
+    ],
     "description": "SvelteKit Script"
+  },
+  "SvelteKit: Script Module": {
+    "prefix": "svmodule",
+    "body": ["<script lang=\"ts\" context=\"module\">", "\t$1", "</script>"],
+    "description": "SvelteKit Script Module"
   },
   "SvelteKit: Load": {
     "prefix": "svload",

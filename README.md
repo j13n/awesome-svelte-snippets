@@ -45,7 +45,17 @@ $2
 
 ```ts
 <script lang="ts">
-	export let data;
+	${TM_SELECTED_TEXT:${1:export let data;}
+</script>
+```
+</details>
+    
+
+<details>
+<summary markdown="span"><b>sv</b>module -  Script Module</summary>
+
+```ts
+<script lang="ts" context="module">
 	$1
 </script>
 ```
