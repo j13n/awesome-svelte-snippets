@@ -28,7 +28,7 @@ Added support for Svelte 5 API:
 ### SVELTE KIT
 
 <details>
-<summary markdown="span"><b>sv</b>pagetest -  Script</summary>
+<summary markdown="span"><b>sv</b>page -  Script</summary>
 
 ```ts
 <script lang="ts">

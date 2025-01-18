@@ -1,6 +1,6 @@
 {
   "SvelteKit: Page": {
-    "prefix": "svpagetest",
+    "prefix": "svpage",
     "body": [
       "<script lang=\"ts\">",
       "\tlet { data }$1 = $$props()",
