@@ -1,21 +1,27 @@
 {
   "SvelteKit: Page": {
-    "prefix": "svpage",
-    "body": ["<script lang=\"ts\">", "\t$1", "</script>", "", "$2"],
-    "description": "SvelteKit Page"
+    "prefix": "svpagetest",
+    "body": [
+      "<script lang=\"ts\">",
+      "\tlet { data }$1 = $$props()",
+      "</script>",
+      "",
+      "$0"
+    ],
+    "description": "SvelteKit Script"
   },
   "SvelteKit: Script": {
     "prefix": "svscript",
     "body": [
       "<script lang=\"ts\">",
-      "\t${TM_SELECTED_TEXT:${1:export let data;}",
+      "\tlet { $1 }: $0 = $$props()",
       "</script>"
     ],
     "description": "SvelteKit Script"
   },
   "SvelteKit: Script Module": {
     "prefix": "svmodule",
-    "body": ["<script lang=\"ts\" context=\"module\">", "\t$1", "</script>"],
+    "body": ["<script lang=\"ts\" module>", "\t$1", "</script>"],
     "description": "SvelteKit Script Module"
   },
   "SvelteKit: Load": {

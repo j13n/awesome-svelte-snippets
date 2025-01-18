@@ -28,14 +28,14 @@ Added support for Svelte 5 API:
 ### SVELTE KIT
 
 <details>
-<summary markdown="span"><b>sv</b>page -  Page</summary>
+<summary markdown="span"><b>sv</b>pagetest -  Script</summary>
 
 ```ts
 <script lang="ts">
-	$1
+	let { data }$1 = $$props()
 </script>
 
-$2
+$0
 ```
 </details>
     
@@ -45,7 +45,7 @@ $2
 
 ```ts
 <script lang="ts">
-	${TM_SELECTED_TEXT:${1:export let data;}
+	let { $1 }: $0 = $$props()
 </script>
 ```
 </details>
@@ -55,7 +55,7 @@ $2
 <summary markdown="span"><b>sv</b>module -  Script Module</summary>
 
 ```ts
-<script lang="ts" context="module">
+<script lang="ts" module>
 	$1
 </script>
 ```
