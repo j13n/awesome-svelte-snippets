@@ -105,34 +105,52 @@ export const handle = async ({ request, resolve }) => {
 ### SVELTE TS
 
 <details>
-<summary markdown="span"><b>sv</b>state - Create a rune state variable</summary>
+<summary markdown="span"><b>sv</b>state - Create a state variable</summary>
 
 ```ts
-let ${1:varName} = $$state(${2:initialValue});
+let ${1:variable} = $$state(${2:initialValue});
 ```
 </details>
     
 
 <details>
-<summary markdown="span"><b>sv</b>derived - Create a rune derived variable</summary>
+<summary markdown="span"><b>sv</b>derived - Create a derived variable</summary>
 
 ```ts
-let ${1:varName} = $$derived(${2:expression});
+let ${1:variable} = $$derived(${2:expression});
 ```
 </details>
     
 
 <details>
-<summary markdown="span"><b>sv</b>effect - Create a rune effect, including cleanup. Even if you don't need it, it's a good to atleast remind yourself that you should think about it.</summary>
+<summary markdown="span"><b>sv</b>effect - Create a rune effect, including cleanup. Even if you don't need it, it's a good to atleast remind yourself that you should consider it.</summary>
 
 ```ts
 $$effect(() => {
-	console.log(${1:varName});
+	$$inspect(${1:variable});
 
 	return () => {
 		console.log("cleanup");
 	}
 });
+```
+</details>
+    
+
+<details>
+<summary markdown="span"><b>sv</b>props - Add props to a component</summary>
+
+```ts
+let ${1:props}:$0 = $$props();
+```
+</details>
+    
+
+<details>
+<summary markdown="span"><b>sv</b>inspect - Inspect a variable.</summary>
+
+```ts
+$$inspect(${0:variable});
 ```
 </details>
     
